@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { useRouter } from 'next/router'
 import styles from '../../styles/BlogPost.module.css';
 
-const slug:FC = () => {
+const Slug:FC = () => {
     const router = useRouter();
     const { slug } = router.query;
     return <div className={styles.container}>
@@ -26,4 +26,4 @@ const slug:FC = () => {
     </div>
 };
 
-export default slug;
+export default Slug;
