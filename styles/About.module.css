@@ -1,0 +1,21 @@
+.container{
+    margin:45px auto;
+    max-width: 45vw; 
+    
+}
+
+.center{
+    text-align: center;
+    color: #ccd6f6;
+}
+
+.h2{
+    color: #ccd6f6;
+}
+@media only screen and (max-width: 600px) {
+  
+    .container{
+        margin:40px auto;
+        max-width: 90vw; 
+    }
+}

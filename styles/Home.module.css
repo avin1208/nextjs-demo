@@ -1,17 +1,18 @@
 .container {
   padding: 0 2rem;
+  background-color: #0b192f;
 }
 
 .main {
   min-height: 100vh;
-  padding: 4rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  justify-content: flex-start;
+  padding-top: 3rem;
 }
-
 .footer {
   display: flex;
   flex: 1;
@@ -43,6 +44,7 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+  color: #ccd6f6;
 }
 
 .title,
@@ -51,19 +53,20 @@
 }
 
 .description {
-  margin: 4rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
+  color: #64ffda;
 }
 
-.code {
+/* .code {
   background: #fafafa;
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
+  color: #ccd6f6;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
-}
+} */
 
 .grid {
   display: flex;
@@ -71,25 +74,29 @@
   justify-content: center;
   flex-wrap: wrap;
   max-width: 800px;
+ 
 }
 
 .card {
   margin: 1rem;
+  height: 300px;
   padding: 1.5rem;
   text-align: left;
   color: inherit;
   text-decoration: none;
-  border: 1px solid #eaeaea;
+  border: 1px solid #57dbbe;
+  border: 1px solid;
   border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
+  transition: color 0.35s ease, border-color 0.35s ease;
   max-width: 300px;
+  /* border-color: #57dbbe; */
 }
 
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: #57dbbe;
+  border-color: #57dbbe;
 }
 
 .card h2 {
@@ -116,14 +123,40 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
-  }
   .code {
-    background: #111;
+    color: #ccd6f6;
   }
   .logo img {
     filter: invert(1);
   }
+}
+
+
+.mainnav ul{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 50px;
+  color: #57ddc0;
+  font-family: 'Montserrat', sans-serif;
+} 
+ 
+.mainnav ul li{
+  margin: 0 24px;
+    list-style: none;
+} 
+
+.mainnav ul li:hover,
+.mainnav ul li:focus,
+.mainnav ul li:active{
+  color: #ccd6f6;
+  text-decoration: underline;
+}
+
+.myImg{
+  border-radius: 15px;
+  margin-top: 30px !important;
+}
+
+.imagewrap{
+  padding: 10px;
 }
